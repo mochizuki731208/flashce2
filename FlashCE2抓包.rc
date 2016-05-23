@@ -1,0 +1,264 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FlashCE2抓包.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FlashCE2抓包.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 FlashCE2抓包"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FlashCE2抓包 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FLASHCE2_DIALOG DIALOGEX 0, 0, 406, 255
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "永乐国际数据采集"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,0,21,405,234
+    COMBOBOX        IDC_COMBO1,35,1,146,67,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "开始",IDC_BUTTON1,184,1,42,16
+    PUSHBUTTON      "",IDC_BUTTON2,231,1,39,16
+    LTEXT           "",IDC_STATIC1,302,1,76,15
+    LTEXT           "网卡",IDC_STATIC,7,4,21,11
+END
+
+IDD_DIALOG1 DIALOG 0, 0, 295, 185
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,0,0,287,182
+END
+
+IDD_DIALOG2 DIALOG 0, 0, 241, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "大厅",IDC_STATIC,3,2,56,78
+    CONTROL         "旗舰厅A",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,14,44,14
+    CONTROL         "国际厅C",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,30,44,13
+    CONTROL         "包桌T",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,46,42,13
+    CONTROL         "VIP厅V",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,62,46,14
+END
+
+IDD_DIALOG3 DIALOG 0, 0, 282, 180
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "连续比较",IDC_STATIC,1,1,230,66
+    CONTROL         "横向连跳: (1)",IDC_CHECK_LX_HL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,12,142,11
+    CONTROL         "纵向连跳: (1)",IDC_CHECK_LX_ZL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,24,148,14
+    CONTROL         "横向多连: (1)",IDC_CHECK_LX_HD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,38,152,15
+    CONTROL         "纵向多连: (1)",IDC_CHECK_LX_ZD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,54,65,9
+    GROUPBOX        "多局比较",IDC_STATIC,2,68,227,46
+    CONTROL         "一致: (完全一致2),部分一致(1),完全相反(1)",IDC_CHECK_DJ_YZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,81,208,13
+    LTEXT           "比较的历史局数",IDC_STATIC,10,98,64,11
+    EDITTEXT        IDC_EDIT_DJ_NUM,82,97,47,12,ES_AUTOHSCROLL
+    GROUPBOX        "修正规则",IDC_STATIC,2,116,226,25
+    CONTROL         "连续数比较: 123321(1),12344321(2),有和不算",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,127,191,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "FlashCE2抓包 Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "FlashCE2抓包"
+            VALUE "LegalCopyright", "版权所有 (C) 2015"
+            VALUE "OriginalFilename", "FlashCE2抓包.EXE"
+            VALUE "ProductName", "FlashCE2抓包 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FLASHCE2_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 293
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 239
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        RIGHTMARGIN, 281
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 179
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_FLASHCE2_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 FlashCE2抓包(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FlashCE2抓包.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
